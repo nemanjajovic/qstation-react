@@ -1,10 +1,11 @@
-# Getting Started with Create React App
+# Qstation kurs
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
 
 Navigate to the project you want to open.
+For example:
 
 ### `cd navigation_bar`
 
