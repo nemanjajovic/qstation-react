@@ -9,6 +9,10 @@ For example:
 
 ### `cd navigation_bar`
 
+Then you will have to do
+
+### `npm install`
+
 Run the script to start the listening server
 
 ### `npm start`
