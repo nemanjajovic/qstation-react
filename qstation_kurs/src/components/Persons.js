@@ -1,42 +1,62 @@
-import Person from "./Person";
+import Person from './Person'
 
 function Persons() {
   const persons = [
     {
-      name: "Nemanja",
-      surname: "Jovic",
+      key: 1,
+      name: 'Nemanja',
+      surname: 'Jovic',
       age: 27,
     },
     {
-      name: "Petar",
-      surname: "Petrovic",
+      key: 2,
+      name: 'Petar',
+      surname: 'Petrovic',
       age: 25,
     },
     {
-      name: "Marko",
-      surname: "Markovic",
+      key: 3,
+      name: 'Marko',
+      surname: 'Markovic',
       age: 30,
     },
-  ];
-  return (
-    <div>
+    {
+      key: 4,
+      name: 'Test',
+      surname: 'Test',
+      age: 'Tests',
+    },
+  ]
+
+  return persons.map((person) => {
+    return (
       <Person
-        name={persons[0].name}
-        surname={persons[0].surname}
-        age={persons[0].age}
+        key={person.key}
+        name={person.name}
+        surname={person.surname}
+        age={person.age}
       />
-      <Person
-        name={persons[1].name}
-        surname={persons[1].surname}
-        age={persons[1].age}
-      />
-      <Person
-        name={persons[2].name}
-        surname={persons[2].surname}
-        age={persons[2].age}
-      />
-    </div>
-  );
+    )
+  })
+  // return (
+  // <div>
+  //   <Person
+  //     name={persons[0].name}
+  //     surname={persons[0].surname}
+  //     age={persons[0].age}
+  //   />
+  //   <Person
+  //     name={persons[1].name}
+  //     surname={persons[1].surname}
+  //     age={persons[1].age}
+  //   />
+  //   <Person
+  //     name={persons[2].name}
+  //     surname={persons[2].surname}
+  //     age={persons[2].age}
+  //   />
+  // </div>
+  // );
 }
 
-export default Persons;
+export default Persons
