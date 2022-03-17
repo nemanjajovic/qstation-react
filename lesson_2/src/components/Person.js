@@ -1,12 +1,20 @@
+import { useState } from "react";
+
 const Person = ({ name, surname, age }) => {
+  const [enteredName, setEnteredName] = useState(name);
+  const buttonClickHandler = () => {
+    setEnteredName("Izmjenjeno");
+    console.log("Dugme kliknuto");
+  };
   return (
-    <div className="person">
-      <h2>Person</h2>
-      <p>{name}</p>
+    <>
+      <h1>Person</h1>
+      <p>{enteredName}</p>
       <p>{surname}</p>
       <p>{age}</p>
-    </div>
-  )
-}
+      <button onClick={buttonClickHandler}>Button</button>
+    </>
+  );
+};
 
-export default Person
+export default Person;

@@ -1,12 +1,12 @@
-import Persons from './components/Persons'
+import Persons from "./components/Persons";
 
-export const App = () => {
+const App = () => {
   return (
-    <div className="App">
-      <h1>App component</h1>
+    <>
+      <div className="App">Persons list</div>
       <Persons />
-    </div>
-  )
-}
+    </>
+  );
+};
 
-// export default App;
+export default App;

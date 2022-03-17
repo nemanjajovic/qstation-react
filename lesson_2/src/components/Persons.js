@@ -1,62 +1,48 @@
-import Person from './Person'
+import Person from "./Person";
+import NewPersonForm from "./NewPersonForm";
 
-function Persons() {
+const Persons = () => {
   const persons = [
     {
-      key: 1,
-      name: 'Nemanja',
-      surname: 'Jovic',
+      name: "petar",
+      surname: "petrovic",
       age: 27,
     },
     {
-      key: 2,
-      name: 'Petar',
-      surname: 'Petrovic',
-      age: 25,
-    },
-    {
-      key: 3,
-      name: 'Marko',
-      surname: 'Markovic',
+      name: "marko",
+      surname: "markovic",
       age: 30,
     },
     {
-      key: 4,
-      name: 'Test',
-      surname: 'Test',
-      age: 'Tests',
+      name: "jovan",
+      surname: "jovanovic",
+      age: 56,
     },
-  ]
+  ];
 
-  return persons.map((person) => {
-    return (
+  const addPersonHandler = (newPerson) => {
+    console.log(newPerson);
+  };
+  return (
+    <>
+      <NewPersonForm onAddPerson={addPersonHandler} />
       <Person
-        key={person.key}
-        name={person.name}
-        surname={person.surname}
-        age={person.age}
+        name={persons[0].name}
+        surname={persons[0].surname}
+        age={persons[0].age}
       />
-    )
-  })
-  // return (
-  // <div>
-  //   <Person
-  //     name={persons[0].name}
-  //     surname={persons[0].surname}
-  //     age={persons[0].age}
-  //   />
-  //   <Person
-  //     name={persons[1].name}
-  //     surname={persons[1].surname}
-  //     age={persons[1].age}
-  //   />
-  //   <Person
-  //     name={persons[2].name}
-  //     surname={persons[2].surname}
-  //     age={persons[2].age}
-  //   />
-  // </div>
-  // );
-}
+      <Person
+        name={persons[1].name}
+        surname={persons[1].surname}
+        age={persons[1].age}
+      />
+      <Person
+        name={persons[2].name}
+        surname={persons[2].surname}
+        age={persons[2].age}
+      />
+    </>
+  );
+};
 
-export default Persons
+export default Persons;
