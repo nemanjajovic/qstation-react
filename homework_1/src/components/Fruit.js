@@ -1,5 +1,4 @@
 import React from 'react'
-// import { useState } from 'react'
 
 const Fruit = ({ onRemoveFruit, id, name, quantity }) => {
   // const [removedFruit, setRemovedFruit] = useState([])
