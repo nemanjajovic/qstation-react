@@ -7,13 +7,13 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 Navigate to the project you want to open.
 For example:
 
-### `cd navigation_bar`
+### `cd homework_1`
 
-Then you will have to do
+Then you will have to install dependencies.
 
 ### `npm install`
 
-Run the script to start the listening server
+Run the script to start the development server
 
 ### `npm start`
 
