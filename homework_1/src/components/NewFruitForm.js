@@ -13,7 +13,7 @@ const NewFruitForm = ({ onAddFruit }) => {
       key: uuid(),
       id: uuid(),
       name: name,
-      quantity: quantity,
+      quantity: '$' + quantity,
     }
     // console.log(newFruit)
     onAddFruit(newFruit)

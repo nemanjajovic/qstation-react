@@ -9,19 +9,19 @@ const FruitList = () => {
       key: '3213123',
       id: '1',
       name: 'Apple',
-      quantity: 300,
+      quantity: '$1.2',
     },
     {
       key: '43425435',
       id: '2',
       name: 'Banana',
-      quantity: 230,
+      quantity: '$2',
     },
     {
       key: '5458457485',
       id: '3',
       name: 'Kiwi',
-      quantity: 55,
+      quantity: '$1.5',
     },
   ])
 
