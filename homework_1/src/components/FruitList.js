@@ -32,11 +32,10 @@ const FruitList = () => {
   const onRemoveFruit = (fruit) => {
     const filteredFruits = fruits.filter((element) => element.id !== fruit.id)
     setFruits(filteredFruits)
-    // console.log(fruit)
     // console.log(filteredFruits)
   }
   return (
-    <div>
+    <div className="fruit-list">
       <NewFruitForm onAddFruit={onAddFruit} />
       {fruits.map((fruit) => {
         return (

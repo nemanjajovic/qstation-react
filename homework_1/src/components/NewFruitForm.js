@@ -29,12 +29,24 @@ const NewFruitForm = ({ onAddFruit }) => {
     // console.log(e.target.value)
   }
   return (
-    <form onSubmit={onSubmitHandler}>
-      <label htmlFor="">Name</label>
-      <input type="text" onChange={addNameHandler} value={name} />
-      <label htmlFor="">Quantity</label>
-      <input type="text" onChange={addQuantityHandler} value={quantity} />
-      <button type="submit">Add Fruit</button>
+    <form onSubmit={onSubmitHandler} className="form-group">
+      <label htmlFor="">Fruit</label>
+      <input
+        className="form-control"
+        type="text"
+        onChange={addNameHandler}
+        value={name}
+      />
+      <label htmlFor="">Price</label>
+      <input
+        className="form-control"
+        type="text"
+        onChange={addQuantityHandler}
+        value={quantity}
+      />
+      <button className="btn btn-primary" type="submit">
+        Add Fruit
+      </button>
     </form>
   )
 }

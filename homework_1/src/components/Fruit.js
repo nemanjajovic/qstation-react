@@ -14,11 +14,13 @@ const Fruit = ({ onRemoveFruit, id, name, quantity }) => {
     // console.log(removedFruitObject)
   }
   return (
-    <div>
-      <h2>Fruit</h2>
-      <p>Name: {name}</p>
-      <p>Quantity: {quantity}</p>
-      <button onClick={removeFruitHandler}>Remove</button>
+    <div className="fruit card px-10 py-5">
+      {/* <h2>Fruit</h2> */}
+      <p className="card-text">Fruit: {name}</p>
+      <p className="card-text">Price: {quantity}</p>
+      <button className="btn btn-danger" onClick={removeFruitHandler}>
+        Remove
+      </button>
     </div>
   )
 }
