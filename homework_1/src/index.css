@@ -25,26 +25,3 @@ code {
   width: 15rem;
   text-align: center;
 }
-
-/*
-.fruit-list {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.fruit {
-  border: 1px solid black;
-  width: 15rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 1rem 10rem;
-  margin-bottom: 2px;
-}
-
-.form {
-  margin: 2rem 0rem;
-} */
