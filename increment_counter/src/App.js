@@ -7,11 +7,19 @@ function App() {
   const newCounterHandler = (incrementStep) => {
     setCounters((prevState) => [...prevState, incrementStep])
   }
-  console.log(counters)
+  const deleteCounterHandler = (counter) => {
+    const filteredCounters = counters.filter(
+      (element) => element.id !== counter,
+    )
+    setCounters(filteredCounters)
+  }
   return (
     <div className="App">
       <NewCounterForm newCounterHandler={newCounterHandler} />
-      <CounterList counters={counters} />
+      <CounterList
+        deleteCounterHandler={deleteCounterHandler}
+        counter={counters}
+      />
     </div>
   )
 }

@@ -1,10 +1,15 @@
 import Counter from './Counter'
 
-const CounterList = (props) => {
+const CounterList = ({ counter, deleteCounterHandler }) => {
   return (
     <div>
-      {props.counters.map((counter) => (
-        <Counter incrementStep={counter} />
+      {counter.map((element) => (
+        <Counter
+          deleteCounterHandler={deleteCounterHandler}
+          id={element.id}
+          key={element.id}
+          incrementStep={element.counters}
+        />
       ))}
     </div>
   )

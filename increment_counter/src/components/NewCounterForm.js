@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { v4 as uuidv4 } from 'uuid'
 
 const NewCounterForm = ({ newCounterHandler }) => {
   const [incrementStep, setIncrementStep] = useState(1)
@@ -7,8 +8,11 @@ const NewCounterForm = ({ newCounterHandler }) => {
   }
   const submitHandler = (e) => {
     e.preventDefault()
-    console.log(incrementStep)
-    newCounterHandler(incrementStep)
+    let newCounterObj = {
+      counters: incrementStep,
+      id: uuidv4(),
+    }
+    newCounterHandler(newCounterObj)
   }
   return (
     <form onSubmit={submitHandler}>
